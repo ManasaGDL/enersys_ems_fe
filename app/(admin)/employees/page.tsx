@@ -91,7 +91,7 @@ export default function EmployeesPage() {
 
     const closePasswordModal = () => {
         setShowPasswordModal(false);
-        setSelectedEmployeeId(null);
+        setSelectedEmployeeId("");
         setSelectedEmployeeName("")
         setNewPassword("");
         setConfirmPassword("");
