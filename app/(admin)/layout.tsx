@@ -42,7 +42,7 @@ export default function AdminLayout({
                                 Projects
                             </Link>
                             <Link className="block px-3 py-2 rounded hover:bg-gray-200 text-black" href="/settings">
-                                Settings
+                                Configure
                             </Link>
                         </nav>
                     </aside>
