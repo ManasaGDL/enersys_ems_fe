@@ -37,11 +37,11 @@ type PayslipData = {
     monthlySalary: string | number;
     presentDays: string | number;
     otHours: string | number;
-
+    absentDays: string | number;
     basicPay: string | number;
     hra: string | number;
     allowance: string | number;
-
+    workingDays: string | number;
     regularPay: string | number;
     otPay: string | number;
     grossPay: string | number;
@@ -205,8 +205,12 @@ export default function PayslipPage() {
                     <div className="border rounded-xl p-4">
                         <h2 className="font-semibold mb-2">Attendance Summary</h2>
                         <p className="text-sm">
-                            <span className="text-gray-600">Present Days:</span>{" "}
-                            <span className="font-medium">{toNum(data.presentDays)}</span>
+                            <span className="text-gray-600">Total Working Days:</span>{" "}
+                            <span className="font-medium">{toNum(data.workingDays)}</span>
+                        </p>
+                        <p className="text-sm">
+                            <span className="text-gray-600">Absent Days:</span>{" "}
+                            <span className="font-medium">{toNum(data.absentDays)}</span>
                         </p>
                         <p className="text-sm">
                             <span className="text-gray-600">OT Hours:</span>{" "}

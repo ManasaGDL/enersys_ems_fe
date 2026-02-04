@@ -23,12 +23,8 @@ export default function AdminLayout({
                             <Link className="block px-3 py-2 rounded hover:bg-gray-200 text-black" href="/dashboard">
                                 Dashboard
                             </Link>
-                            <Link className="block px-3 py-2 rounded hover:bg-gray-200 text-black" href="/departments">
-                                Departments
-                            </Link>
-                            <Link className="block px-3 py-2 rounded hover:bg-gray-200 text-black" href="/roles">
-                                Roles
-                            </Link>
+
+
                             <Link className="block px-3 py-2 rounded hover:bg-gray-200 text-black" href="/employees">
                                 Employees
                             </Link>
@@ -38,8 +34,9 @@ export default function AdminLayout({
                             <Link className="block px-3 py-2 rounded hover:bg-gray-200 text-black" href="/attendance">
                                 Attendance
                             </Link>
-                            <Link className="block px-3 py-2 rounded hover:bg-gray-200 text-black" href="/projects">
-                                Projects
+
+                            <Link className="block px-3 py-2 rounded hover:bg-gray-200 text-black" href="/payments">
+                                Payments
                             </Link>
                             <Link className="block px-3 py-2 rounded hover:bg-gray-200 text-black" href="/settings">
                                 Configure

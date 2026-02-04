@@ -140,12 +140,12 @@ export default function EmployeesPage() {
             <div className="flex justify-between items-center">
                 <h1 className="text-xl font-semibold">Employees</h1>
 
-                <button
+                {/* <button
                     onClick={() => router.push("/employees/add")}
                     className="bg-blue-600 text-white px-4 py-2 rounded"
                 >
                     Add Employee
-                </button>
+                </button> */}
             </div>
 
             {/* Employees Table */}

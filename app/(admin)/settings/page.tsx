@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, CalendarCheck2, IndianRupee, Settings2, Users, Building2, UserCog, Clock } from "lucide-react";
+import { ArrowRight, CalendarCheck2, IndianRupee, Settings2, Users, Building2, UserCog, Clock, BrickWall } from "lucide-react";
 
 export default function SettingsPage() {
     return (
@@ -75,8 +75,43 @@ export default function SettingsPage() {
                         </p>
                     </div>
                 </Link>
+                <Link
+                    href="/projects"
+                    className="bg-white border rounded-2xl shadow-sm p-5 hover:shadow-md transition flex flex-col gap-3"
+                >
+                    <div className="flex items-center justify-between">
+                        <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center">
+                            <BrickWall className="w-5 h-5 text-black" />
+                        </div>
+                        <ArrowRight className="w-5 h-5 text-gray-400" />
+                    </div>
 
+                    <div>
+                        <h2 className="text-base font-semibold text-black">Projects</h2>
+                        <p className="text-sm text-gray-500 mt-1">
+                            Configure Projects
+                        </p>
+                    </div>
+                </Link>
                 {/* OT Settings */}
+                <Link
+                    href="/employees/add"
+                    className="bg-white border rounded-2xl shadow-sm p-5 hover:shadow-md transition flex flex-col gap-3"
+                >
+                    <div className="flex items-center justify-between">
+                        <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center">
+                            <Settings2 className="w-5 h-5 text-black" />
+                        </div>
+                        <ArrowRight className="w-5 h-5 text-gray-400" />
+                    </div>
+
+                    <div>
+                        <h2 className="text-base font-semibold text-black">Add Employees</h2>
+                        <p className="text-sm text-gray-500 mt-1">
+                            Create Employees
+                        </p>
+                    </div>
+                </Link>
                 <Link
                     href="/settings/ot"
                     className="bg-white border rounded-2xl shadow-sm p-5 hover:shadow-md transition flex flex-col gap-3"
@@ -92,6 +127,26 @@ export default function SettingsPage() {
                         <h2 className="text-base font-semibold text-black">OT Settings</h2>
                         <p className="text-sm text-gray-500 mt-1">
                             Configure default OT calculation for the company.
+                        </p>
+                    </div>
+                </Link>
+
+
+                <Link
+                    href="/settings/holidays"
+                    className="bg-white border rounded-2xl shadow-sm p-5 hover:shadow-md transition flex flex-col gap-3"
+                >
+                    <div className="flex items-center justify-between">
+                        <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center">
+                            <Settings2 className="w-5 h-5 text-black" />
+                        </div>
+                        <ArrowRight className="w-5 h-5 text-gray-400" />
+                    </div>
+
+                    <div>
+                        <h2 className="text-base font-semibold text-black">Holidays</h2>
+                        <p className="text-sm text-gray-500 mt-1">
+                            Configure holidays for the company.
                         </p>
                     </div>
                 </Link>
